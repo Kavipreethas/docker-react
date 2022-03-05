@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t sai/docker-react -f Dockerfile.dev .
+  - docker build -t kavipreethas/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true sai/docker-react npm run test
+  - docker run -e CI=true kavipreethas/docker-react npm run test
